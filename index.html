@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+    <div class="container">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a title="logo" class="navbar-brand" href="#"><i class="fa-solid fa-star"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">contact us</a>
+                    </li>
+
+                </ul>
+                <div class="cart">
+                    <span class="navbar-text">
+                        <i class="fa-solid fa-cart-shopping"></i> </span>
+                    <span class="total">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- ///////////////////////////// -->
+    <div class="container-fluid  slider ">
+        <div id="slide-number" class="slide-number"></div>
+        <img src="asstes/1.jpg" class="img-thumbnail" id="slider" alt="" />
+
+    </div>
+    <div class=" container mt-0  slider-controls gap-1 d-flex justify-content-center">
+        <button type="button" onclick="prev()" id="prev" class="btn-outline-secondary btn prev">Previous</button>
+        <button type="button" id="ii" onclick="play()" class="btn btn-outline-dark  indicators">play</button>
+        <button id="i" type="button" onclick="stop()" class="btn btn-outline-dark indicators">stop</button>
+        <button id="next" onclick="Next()" class="btn btn-outline-secondary next" type="button">Next</button>
+    </div>
+    <!-- //////////////////////////////////////////// -->
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam veniam corporis hic aliquid tenetur itaque
+            facilis voluptatem sit! Asperiores totam officiis placeat quibusdam quos molestias dolorum nesciunt commodi
+            numquam laudantium!Lorem
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus quaerat rerum laudantium consequuntur enim
+            cum, at ratione possimus dolores quidem assumenda quia tempore, suscipit deserunt officia quasi!
+            Consequatur, repellat autem.</p>
+    </div>
+    <!-- /////////////////////////////////////////////// -->
+    <div class="container selector gap-1 d-flex justify-content-center mt-2">
+        <div class="container catagories d-flex justify-content-center gap-2">
+            <button type="button" class="catgory  mobiles btn btn-outline-primary" value="mobile" id="mobiles">mobiles
+            </button>
+            <button type="button" class="catgory TVs btn btn-outline-primary" value="tv" id="TVs">TVs</button>
+            <button type="button" class="catgory laptops btn btn-outline-primary" value="laptop"
+                id="laptops">LapTops</button>
+        </div>
+    </div>
+
+    <div class="container cards card-group gap-1  mt-2">
+        <div class="row   row-cols-1 row-cols-md-3  ">
+            <div class="card  col tv">
+                <img src="https://via.placeholder.com/1000x1000?text=TV" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="#" class="add btn btn-primary">Add</a>
+                </div>
+            </div>
+            <div class="card col tv">
+                <img src="https://via.placeholder.com/1000x1000?text=TV" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="#" class="add btn btn-primary">Add</a>
+                </div>
+            </div>
+            <div class="card col mobile">
+                <img src="https://via.placeholder.com/1000x1000?text=Mobile" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="#" class="add btn btn-primary">Add</a>
+                </div>
+            </div>
+            <div class="card mobile col">
+                <img src="https://via.placeholder.com/1000x1000?text=Mobile" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                    <a href="#" class="add btn btn-primary">Add</a>
+                </div>
+            </div>
+            <div class="card col laptop">
+                <img src="https://via.placeholder.com/1000x1000?text=laptops" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                    <a href="#" class="add btn btn-primary">Add</a>
+                </div>
+            </div>
+            <div class="card col laptop">
+                <img src="https://via.placeholder.com/1000x1000?text=laptops" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                    <a href="#" class="add btn btn-primary">Add</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //////////////// -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-outline-dark text-primary"><i
+            class="fa-solid fa-angles-up"></i></button>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a title="a" href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="text-muted">© 2021 Company, Inc</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a title="tw" class="text-muted" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="ms-3"><a title="in" class="text-muted" href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="ms-3"><a title="fa" class="text-muted" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
